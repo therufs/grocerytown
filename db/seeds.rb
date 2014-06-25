@@ -26,10 +26,17 @@ chai = Item.create(name: "chai")
 
 dairy = List.create(name: "Dairy")
 milk.list = dairy
+milk.save
 handh.list = dairy
+handh.save
 cheese.list = dairy
+cheese.save
 
 beans.store = kroger
+beans.save
 tuna.store = kroger
+tuna.save
 ritz.store = target
+ritz.save
 chai.store = target
+chai.save

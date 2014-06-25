@@ -5,6 +5,8 @@ class List < ActiveRecord::Base
   belongs_to :store
   belongs_to :listable, polymorphic: true
 
+  validates :listable_id, numericality: { other_than: :id }
+
   has_many :lists, as: :listable
   # has_many :sublists, class_name: "List", foreign_key: "superlist_id"
   # belongs_to :superlist, class_name: "List"
