@@ -5,3 +5,31 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+kroger = Store.create(name: "Kroger")
+ht = Store.create(name: "Harris Teeter")
+target = Store.create(name: "Target")
+wf = Store.create(name: "Whole Foods")
+tjs = Store.create(name: "Trader Joes")
+kings = Store.create(name: "Kings Red & White")
+
+milk = Item.create(name: "milk")
+handh = Item.create(name: "half and half")
+cheese = Item.create(name: "cheese")
+kale = Item.create(name: "kale")
+ritz = Item.create(name: "Ritz")
+beans = Item.create(name: "black beans")
+salsa = Item.create(name: "salsa")
+tuna = Item.create(name: "tuna")
+chai = Item.create(name: "chai")
+
+dairy = List.create(name: "Dairy")
+milk.list = dairy
+handh.list = dairy
+cheese.list = dairy
+
+beans.store = kroger
+tuna.store = kroger
+ritz.store = target
+chai.store = target
